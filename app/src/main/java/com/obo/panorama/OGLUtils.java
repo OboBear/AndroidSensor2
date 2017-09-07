@@ -48,7 +48,7 @@ public class OGLUtils {
 
         try {
             BufferedReader e = new BufferedReader(new InputStreamReader(context.getAssets().open(sourseName)));
-            String tempStr = null;
+            String tempStr;
             while(null != (tempStr = e.readLine())) {
                 shaderSource.append(tempStr);
             }
